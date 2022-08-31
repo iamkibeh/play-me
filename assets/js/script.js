@@ -8,6 +8,11 @@ const cocktailImage = document.getElementById("cocktail-image");
 const foodName = document.getElementById("food-name");
 const foodImage = document.getElementById("food-image");
 const drinksReviewList = document.getElementById("review-list");
+const drinksForm = document.getElementById("drinks-review-form");
+const foodForm = document.getElementById("food-review-form");
+const drinkDescription = document.getElementById("drink-review")
+
+
 
 function onLoad() {
   fetch("http://localhost:3000/drinks")
@@ -41,7 +46,7 @@ function displayDrinks(drinksArr) {
   drinksArr.forEach((drinkObj) => {
     drinkNames = drinkObj.strDrink;
     drinksCont.innerHTML += `
-<a href="#" class="list-group-item list-group-item-action list-group-item-dark">${drinkNames}</a>
+<a href="#drinks-sec" class="list-group-item list-group-item-action list-group-item-dark">${drinkNames}</a>
 `;
   });
 specificDrink = Array.from(document.getElementsByClassName("list-group-item"));
@@ -55,7 +60,7 @@ function displayFood(foodArr) {
   foodArr.forEach((foodObj) => {
     foodNames = foodObj.strCategory;
     foodCont.innerHTML += `
-<a href="#" class="list-group-item list-group-item-action list-group-item-dark">${foodNames}</a>
+<a href="#meals" class="list-group-item list-group-item-action list-group-item-dark">${foodNames}</a>
 `;
   });
 }
@@ -99,4 +104,50 @@ function updatedDrink(id) {
     .then((data) => {
       firstDisplayDrink(data);
     });
+}
+
+drinksForm.addEventListener("submit",drinkSubmit)
+foodForm.addEventListener("submit", foodSubmit)
+
+
+function drinkSubmit(e){
+    e.preventDefault();
+    let yourReview = drinkDescription.value;
+    if(yourReview !== ""){
+        patchEdit(yourReview);
+    }
+drinksForm.reset()
+}
+
+function patchEdit(des){
+   drinksReviewList.innerHTML += `<li>${des}</li>`
+//    console.log(cocktailName.textContent)
+fetch("http://localhost:3000/drinks")
+    .then((resp) => resp.json())
+    .then((data) => {
+     let selectedCocktail = data.find((cocktail)=>{
+return cocktail.strDrink === cocktailName.textContent
+     })
+     
+     fetch(`http://localhost:3000/drinks/${selectedCocktail.id}`,{
+        method: "PATCH",
+        headers: {
+            "Content-type" : "application/json",
+            Accept : "application/json"
+        },
+        body : JSON.stringify({
+            "description" : `[...${selectedCocktail.description},${des}]`
+        }),
+     })
+     .then(resp => resp.json())
+     .then(data =>{
+        console.log(data)
+     })
+     .catch((error)=>{
+        console.log(error.message)
+     })
+    });
+}
+function foodSubmit(e){
+    e.preventDefault()
 }
