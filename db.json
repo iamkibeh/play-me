@@ -1,0 +1,380 @@
+
+{
+    "drinks": [
+      {
+        "id":1,
+        "strDrink": "9 1/2 Weeks",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/xvwusr1472669302.jpg",
+        "idDrink": "16108",
+        "cost": 795,
+        "description":["My friend received his cocktail on time & then we all had a Zoom call to have a few drinks “together”. According to the friend, the cocktail (Zombie) was delicious & they didn’t skimp on the alcohol either! He said he got 3 very large drinks out of one jar. I’ll definitely use the service again. Highly recommended."]
+      },
+      {
+        "id":2,
+        "strDrink": "A. J.",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/l74qo91582480316.jpg",
+        "idDrink": "17833",
+        "cost": 800,
+        "description": ["I have been at this bar a number of times and there is always a great atmosphere!! Fab food and drinks and lovely staff! I have heard it is dog friendly so I am looking forward to a visit with my doggo soon hopefully!"]
+
+      },
+      {
+        "id":3,
+        "strDrink": "A1",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg",
+        "idDrink": "17222",
+        "cost": 900,
+        "description": ["I always enjoy visiting The Fourth Corner. The staff are so friendly & welcoming. The vibes are always flowing in there, and so are the pints! Love their cocktails and also the fact you can get them to takeaway during closed seating restrictions! They have done an amazing job adapting to social distancing guidelines and I am so excited for my next visit!"]
+
+      },
+      {
+        "id":4,
+        "strDrink": "Abbey Cocktail",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/mr30ob1582479875.jpg",
+        "idDrink": "17834",
+        "cost": 850,
+        "description": ["My friend received his cocktail on time & then we all had a Zoom call to have a few drinks “together”. According to the friend, the cocktail (Zombie) was delicious & they didn’t skimp on the alcohol either! He said he got 3 very large drinks out of one jar. I’ll definitely use the service again. Highly recommended."]
+      },
+      {
+        "id":5,
+        "strDrink": "Abbey Martini",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/2mcozt1504817403.jpg",
+        "idDrink": "17223",
+        "cost": 900,
+        "description": ["I always enjoy visiting The Fourth Corner. The staff are so friendly & welcoming. The vibes are always flowing in there, and so are the pints! Love their cocktails and also the fact you can get them to takeaway during closed seating restrictions! They have done an amazing job adapting to social distancing guidelines and I am so excited for my next visit!"]
+
+      },
+      {
+        "id":6,
+        "strDrink": "Absolutely Cranberry Smash",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vqwstv1472811884.jpg",
+        "idDrink": "15024",
+        "cost": 900,
+        "description": ["I have been at this bar a number of times and there is always a great atmosphere!! Fab food and drinks and lovely staff! I have heard it is dog friendly so I am looking forward to a visit with my doggo soon hopefully!"]
+      },
+      {
+        "id":7,
+        "strDrink": "Adam",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/v0at4i1582478473.jpg",
+        "idDrink": "17837",
+        "cost": 1000,
+"description": ["This pub has good music and a great selection of drinks (the Albarino white wine was fabulous). They don't have an extensive menu but everything we had was very tasty. Staff (one of the owners) was very friendly."]
+
+      },
+      {
+        "id":8,
+        "strDrink": "Adam & Eve",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vfeumw1504819077.jpg",
+        "idDrink": "17226",
+        "cost": 1200,
+        "description": ["I have been at this bar a number of times and there is always a great atmosphere!! Fab food and drinks and lovely staff! I have heard it is dog friendly so I am looking forward to a visit with my doggo soon hopefully!"]
+
+      },
+      {
+        "id":9,
+        "strDrink": "Addington",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ib0b7g1504818925.jpg",
+        "idDrink": "17227",
+        "cost": 950,
+        "description": ["I always enjoy visiting The Fourth Corner. The staff are so friendly & welcoming. The vibes are always flowing in there, and so are the pints! Love their cocktails and also the fact you can get them to takeaway during closed seating restrictions! They have done an amazing job adapting to social distancing guidelines and I am so excited for my next visit!"]
+
+      },
+      {
+        "id":10,
+        "strDrink": "Adonis Cocktail",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/xrvruq1472812030.jpg",
+        "idDrink": "17838",
+        "cost": 850,
+        "description": ["My friend received his cocktail on time & then we all had a Zoom call to have a few drinks “together”. According to the friend, the cocktail (Zombie) was delicious & they didn’t skimp on the alcohol either! He said he got 3 very large drinks out of one jar. I’ll definitely use the service again. Highly recommended."]
+      },
+      {
+        "id":11,
+        "strDrink": "Affinity",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wzdtnn1582477684.jpg",
+        "idDrink": "17840",
+        "cost": 800,
+        "description": ["I have been at this bar a number of times and there is always a great atmosphere!! Fab food and drinks and lovely staff! I have heard it is dog friendly so I am looking forward to a visit with my doggo soon hopefully!"]
+
+      },
+      {
+        "id":12,
+        "strDrink": "After Dinner Cocktail",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/vtytxq1483387578.jpg",
+        "idDrink": "11010",
+        "cost": 600,
+        "description": ["I always enjoy visiting The Fourth Corner. The staff are so friendly & welcoming. The vibes are always flowing in there, and so are the pints! Love their cocktails and also the fact you can get them to takeaway during closed seating restrictions! They have done an amazing job adapting to social distancing guidelines and I am so excited for my next visit!"]
+
+      },
+      {
+        "id":13,
+        "strDrink": "After Supper Cocktail",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/quyxwu1483387610.jpg",
+        "idDrink": "11011",
+        "cost": 650,
+        "description": ["My friend received his cocktail on time & then we all had a Zoom call to have a few drinks “together”. According to the friend, the cocktail (Zombie) was delicious & they didn’t skimp on the alcohol either! He said he got 3 very large drinks out of one jar. I’ll definitely use the service again. Highly recommended."]
+
+      },
+      {
+        "id":14,
+        "strDrink": "Alaska Cocktail",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/wsyryt1483387720.jpg",
+        "idDrink": "11013",
+        "cost": 800,
+        "description": ["I have been at this bar a number of times and there is always a great atmosphere!! Fab food and drinks and lovely staff! I have heard it is dog friendly so I am looking forward to a visit with my doggo soon hopefully!"]
+
+      },
+      {
+        "id":15,
+        "strDrink": "Alexander",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/0clus51606772388.jpg",
+        "idDrink": "11014",
+        "cost": 600,
+        "description": ["This pub has good music and a great selection of drinks (the Albarino white wine was fabulous). They don't have an extensive menu but everything we had was very tasty. Staff (one of the owners) was very friendly."]
+
+      },
+      {
+        "id":16,
+        "strDrink": "Alfie Cocktail",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/ypxsqy1483387829.jpg",
+        "idDrink": "11019",
+        "cost": 800,
+        "description": ["I always enjoy visiting The Fourth Corner. The staff are so friendly & welcoming. The vibes are always flowing in there, and so are the pints! Love their cocktails and also the fact you can get them to takeaway during closed seating restrictions! They have done an amazing job adapting to social distancing guidelines and I am so excited for my next visit!"]
+
+      },
+      {
+        "id":17,
+        "strDrink": "Algonquin",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uwryxx1483387873.jpg",
+        "idDrink": "11020",
+        "cost": 700,
+        "description": ["My friend received his cocktail on time & then we all had a Zoom call to have a few drinks “together”. According to the friend, the cocktail (Zombie) was delicious & they didn’t skimp on the alcohol either! He said he got 3 very large drinks out of one jar. I’ll definitely use the service again. Highly recommended."]
+
+      },
+      {
+        "id":18,
+        "strDrink": "Alice Cocktail",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qyqtpv1468876144.jpg",
+        "idDrink": "12562",
+        "cost": 800,
+        "description": ["This pub has good music and a great selection of drinks (the Albarino white wine was fabulous). They don't have an extensive menu but everything we had was very tasty. Staff (one of the owners) was very friendly."]
+      },
+      {
+        "id":19,
+        "strDrink": "Allegheny",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/uwvyts1483387934.jpg",
+        "idDrink": "11021",
+        "cost": 750,
+"description": ["This pub has good music and a great selection of drinks (the Albarino white wine was fabulous). They don't have an extensive menu but everything we had was very tasty. Staff (one of the owners) was very friendly."]
+      },
+      {
+        "id":20,
+        "strDrink": "Allies Cocktail",
+        "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qvprvp1483388104.jpg",
+        "idDrink": "11022",
+        "cost": 550,
+        "description": ["I always enjoy visiting The Fourth Corner. The staff are so friendly & welcoming. The vibes are always flowing in there, and so are the pints! Love their cocktails and also the fact you can get them to takeaway during closed seating restrictions! They have done an amazing job adapting to social distancing guidelines and I am so excited for my next visit!"]
+      }
+    ],
+    "music":[
+        {
+            "rank": 1,
+            "artist": "Ed Sheeran",
+            "monthlyListeners": "81.34"
+        },
+        {
+            "rank": 2,
+            "artist": "The Weeknd",
+            "monthlyListeners": "78.84"
+        },
+        {
+            "rank": 3,
+            "artist": "Justin Bieber",
+            "monthlyListeners": "71.30"
+        },
+        {
+            "rank": 4,
+            "artist": "Harry Styles",
+            "monthlyListeners": "69.99"
+        },
+        {
+            "rank": 5,
+            "artist": "Dua Lipa",
+            "monthlyListeners": "69.29"
+        },
+        {
+            "rank": 6,
+            "artist": "Drake",
+            "monthlyListeners": "64.97"
+        },
+        {
+            "rank": 7,
+            "artist": "Bad Bunny",
+            "monthlyListeners": "63.47"
+        },
+        {
+            "rank": 8,
+            "artist": "Calvin Harris",
+            "monthlyListeners": "58.81"
+        },
+        {
+            "rank": 9,
+            "artist": "Taylor Swift",
+            "monthlyListeners": "58.42"
+        },
+        {
+            "rank": 10,
+            "artist": "Doja Cat",
+            "monthlyListeners": "56.98"
+        },
+        {
+            "rank": 11,
+            "artist": "Coldplay",
+            "monthlyListeners": "55.75"
+        },
+        {
+            "rank": 12,
+            "artist": "David Guetta",
+            "monthlyListeners": "55.61"
+        },
+        {
+            "rank": 13,
+            "artist": "J Balvin",
+            "monthlyListeners": "53.88"
+        },
+        {
+            "rank": 14,
+            "artist": "Post Malone",
+            "monthlyListeners": "53.72"
+        },
+        {
+            "rank": 15,
+            "artist": "Eminem",
+            "monthlyListeners": "53.72"
+        },
+        {
+            "rank": 16,
+            "artist": "Imagine Dragons",
+            "monthlyListeners": "52.93"
+        },
+        {
+            "rank": 17,
+            "artist": "Rihanna",
+            "monthlyListeners": "52.79"
+        },
+        {
+            "rank": 18,
+            "artist": "Billie Eilish",
+            "monthlyListeners": "51.91"
+        },
+        {
+            "rank": 19,
+            "artist": "Ariana Grande",
+            "monthlyListeners": "51.85"
+        },
+        {
+            "rank": 20,
+            "artist": "Shakira",
+            "monthlyListeners": "51.55"
+        }
+    ],
+    "food": [
+        {
+          "id": 1,
+          "strCategory": "Beef",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/beef.png",
+          "strCategoryDescription": "Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.[1] Beef is a source of high-quality protein and essential nutrients.[2]",
+          "cost": 1200
+        },
+        {
+          "id": 2,
+          "strCategory": "Chicken",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/chicken.png",
+          "strCategoryDescription": "Chicken is a type of domesticated fowl, a subspecies of the red junglefowl. It is one of the most common and widespread domestic animals, with a total population of more than 19 billion as of 2011.[1] Humans commonly keep chickens as a source of food (consuming both their meat and eggs) and, more rarely, as pets.",
+          "cost": 1000
+        },
+        {
+          "id": 3,
+          "strCategory": "Dessert",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/dessert.png",
+          "strCategoryDescription": "Dessert is a course that concludes a meal. The course usually consists of sweet foods, such as confections dishes or fruit, and possibly a beverage such as dessert wine or liqueur, however in the United States it may include coffee, cheeses, nuts, or other savory items regarded as a separate course elsewhere. In some parts of the world, such as much of central and western Africa, and most parts of China, there is no tradition of a dessert course to conclude a meal.\r\n\r\nThe term dessert can apply to many confections, such as biscuits, cakes, cookies, custards, gelatins, ice creams, pastries, pies, puddings, and sweet soups, and tarts. Fruit is also commonly found in dessert courses because of its naturally occurring sweetness. Some cultures sweeten foods that are more commonly savory to create desserts.",
+          "cost": 1200
+        },
+        {
+          "id": 4,
+          "strCategory": "Lamb",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/lamb.png",
+          "strCategoryDescription": "Lamb, hogget, and mutton are the meat of domestic sheep (species Ovis aries) at different ages.\r\n\r\nA sheep in its first year is called a lamb, and its meat is also called lamb. The meat of a juvenile sheep older than one year is hogget; outside the USA this is also a term for the living animal. The meat of an adult sheep is mutton, a term only used for the meat, not the living animals. The term mutton is almost always used to refer to goat meat in the Indian subcontinent.\r\n\r\n",
+          "cost": 1500
+        },
+        {
+          "id": 5,
+          "strCategory": "Miscellaneous",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/miscellaneous.png",
+          "strCategoryDescription": "General foods that don't fit into another category",
+          "cost": 1200
+        },
+        {
+          "id": 6,
+          "strCategory": "Pasta",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/pasta.png",
+          "strCategoryDescription": "Pasta is a staple food of traditional Italian cuisine, with the first reference dating to 1154 in Sicily.\r\n\r\nAlso commonly used to refer to the variety of pasta dishes, pasta is typically a noodle made from an unleavened dough of a durum wheat flour mixed with water or eggs and formed into sheets or various shapes, then cooked by boiling or baking. As an alternative for those wanting a different taste, or who need to avoid products containing gluten, some pastas can be made using rice flour in place of wheat.[3][4] Pastas may be divided into two broad categories, dried (pasta secca) and fresh (pasta fresca).",
+          "cost": 900
+        },
+        {
+          "id": 7,
+          "strCategory": "Pork",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/pork.png",
+          "strCategoryDescription": "Pork is the culinary name for meat from a domestic pig (Sus scrofa domesticus). It is the most commonly consumed meat worldwide,[1] with evidence of pig husbandry dating back to 5000 BC. Pork is eaten both freshly cooked and preserved. Curing extends the shelf life of the pork products. Ham, smoked pork, gammon, bacon and sausage are examples of preserved pork. Charcuterie is the branch of cooking devoted to prepared meat products, many from pork.\r\n\r\nPork is the most popular meat in Eastern and Southeastern Asia, and is also very common in the Western world, especially in Central Europe. It is highly prized in Asian cuisines for its fat content and pleasant texture. Consumption of pork is forbidden by Jewish and Muslim dietary law, a taboo that is deeply rooted in tradition, with several suggested possible causes. The sale of pork is limited in Israel and illegal in certain Muslim countries.",
+          "cost": 1100
+        },
+        {
+          "id": 8,
+          "strCategory": "Seafood",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/seafood.png",
+          "strCategoryDescription": "Seafood is any form of sea life regarded as food by humans. Seafood prominently includes fish and shellfish. Shellfish include various species of molluscs, crustaceans, and echinoderms. Historically, sea mammals such as whales and dolphins have been consumed as food, though that happens to a lesser extent in modern times. Edible sea plants, such as some seaweeds and microalgae, are widely eaten as seafood around the world, especially in Asia (see the category of sea vegetables). In North America, although not generally in the United Kingdom, the term \"seafood\" is extended to fresh water organisms eaten by humans, so all edible aquatic life may be referred to as seafood. For the sake of completeness, this article includes all edible aquatic life.",
+          "cost": 1200
+        },
+        {
+          "id": "9",
+          "strCategory": "Side",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/side.png",
+          "strCategoryDescription": "A side dish, sometimes referred to as a side order, side item, or simply a side, is a food item that accompanies the entrée or main course at a meal. Side dishes such as salad, potatoes and bread are commonly used with main courses throughout many countries of the western world. New side orders introduced within the past decade[citation needed], such as rice and couscous, have grown to be quite popular throughout Europe, especially at formal occasions (with couscous appearing more commonly at dinner parties with Middle Eastern dishes).",
+          "cost": 1200
+        },
+        {
+          "id": 10,
+          "strCategory": "Starter",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/starter.png",
+          "strCategoryDescription": "An entrée in modern French table service and that of much of the English-speaking world (apart from the United States and parts of Canada) is a dish served before the main course of a meal; it may be the first dish served, or it may follow a soup or other small dish or dishes. In the United States and parts of Canada, an entrée is the main dish or the only dish of a meal.\r\n\r\nHistorically, the entrée was one of the stages of the “Classical Order” of formal French table service of the 18th and 19th centuries. It formed a part of the “first service” of the meal, which consisted of potage, hors d’œuvre, and entrée (including the bouilli and relevé). The “second service” consisted of roast (rôti), salad, and entremets (the entremets sometimes being separated into a “third service” of their own). The final service consisted only of dessert.[3]:3–11 :13–25",
+          "cost": 1350
+        },
+        {
+          "id": 11,
+          "strCategory": "Vegan",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/vegan.png",
+          "strCategoryDescription": "Veganism is both the practice of abstaining from the use of animal products, particularly in diet, and an associated philosophy that rejects the commodity status of animals.[b] A follower of either the diet or the philosophy is known as a vegan (pronounced /ˈviːɡən/ VEE-gən). Distinctions are sometimes made between several categories of veganism. Dietary vegans (or strict vegetarians) refrain from consuming animal products, not only meat but also eggs, dairy products and other animal-derived substances.[c] The term ethical vegan is often applied to those who not only follow a vegan diet but extend the philosophy into other areas of their lives, and oppose the use of animals for any purpose.[d] Another term is environmental veganism, which refers to the avoidance of animal products on the premise that the harvesting or industrial farming of animals is environmentally damaging and unsustainable.",
+          "cost": 1600
+        },
+        {
+          "id": 12,
+          "strCategory": "Vegetarian",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/vegetarian.png",
+          "strCategoryDescription": "Vegetarianism is the practice of abstaining from the consumption of meat (red meat, poultry, seafood, and the flesh of any other animal), and may also include abstention from by-products of animal slaughter.\r\n\r\nVegetarianism may be adopted for various reasons. Many people object to eating meat out of respect for sentient life. Such ethical motivations have been codified under various religious beliefs, as well as animal rights advocacy. Other motivations for vegetarianism are health-related, political, environmental, cultural, aesthetic, economic, or personal preference. There are variations of the diet as well: an ovo-lacto vegetarian diet includes both eggs and dairy products, an ovo-vegetarian diet includes eggs but not dairy products, and a lacto-vegetarian diet includes dairy products but not eggs. A vegan diet excludes all animal products, including eggs and dairy. Some vegans also avoid other animal products such as beeswax, leather or silk clothing, and goose-fat shoe polish.",
+          "cost": 800
+        },
+        {
+          "id": 13,
+          "strCategory": "Breakfast",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/breakfast.png",
+          "strCategoryDescription": "Breakfast is the first meal of a day. The word in English refers to breaking the fasting period of the previous night. There is a strong likelihood for one or more \"typical\", or \"traditional\", breakfast menus to exist in most places, but their composition varies widely from place to place, and has varied over time, so that globally a very wide range of preparations and ingredients are now associated with breakfast.",
+          "cost": 600
+        },
+        {
+          "id": "14",
+          "strCategory": "Goat",
+          "strCategoryThumb": "https://www.themealdb.com/images/category/goat.png",
+          "strCategoryDescription": "The domestic goat or simply goat (Capra aegagrus hircus) is a subspecies of C. aegagrus domesticated from the wild goat of Southwest Asia and Eastern Europe. The goat is a member of the animal family Bovidae and the subfamily Caprinae, meaning it is closely related to the sheep. There are over 300 distinct breeds of goat. Goats are one of the oldest domesticated species of animal, and have been used for milk, meat, fur and skins across much of the world. Milk from goats is often turned into goat cheese.",
+          "cost": 1000
+        }
+      ]
+}
