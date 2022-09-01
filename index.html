@@ -131,7 +131,7 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Confirm purchase</button>
+                      <button type="button" class="btn btn-primary" id="purchase-drink">Confirm purchase</button>
                     </div>
                   </div>
                 </div>
@@ -171,13 +171,29 @@
         </form>
         </div>
         <div class="order-food-btn">
-            <!-- <button type="button" class="btn btn-outline-primary btn-lg">
+          <a href="#">  <button type="button" class="btn btn-outline-primary btn-lg" id="order-food">
                Order me
-              </button> -->
-              <!-- Button trigger modal -->
-
+              </button>
+            </a>
         </div>
         
+      </div>
+
+      <div class="foodBtnModal">
+        <div class="head-sec">
+<h4><span id="food-modal-name">My title goes here</span></h4>
+<button id="closeBtn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>Cost:<span id="food-cost-amount" style="font-weight: bold;"></span></p>
+            <p>IdCategory: <span id="food-id-category" style="font-weight: bold;"></span></p>
+            <p>Discount:<span id="discount" style="font-style: italic;">No offer currently valid</span> </p>
+            <label for="table-number">Table Number</label>
+            <input type="number" name="table-number" id="food-table-number">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="purchase-btn">Confirm purchase</button>
+        </div>
       </div>
     </div>
 

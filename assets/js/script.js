@@ -11,9 +11,10 @@ const drinksReviewList = document.getElementById("review-list");
 const drinksForm = document.getElementById("drinks-review-form");
 const foodForm = document.getElementById("food-review-form");
 const drinkDescription = document.getElementById("drink-review");
-const drinkModalLabel = document.getElementById("drinkModalLabel")
-const foodModalLabel = document.getElementById("foodModalLabel")
-
+const drinkModalLabel = document.getElementById("drinkModalLabel");
+const orderFoodBtn = document.getElementById("order-food");
+const foodBtnModal = document.querySelector(".foodBtnModal");
+const purchaseBtn = document.getElementById("purchase-btn");
 
 function onLoad() {
   fetch("http://localhost:3000/drinks")
@@ -80,28 +81,46 @@ function firstDisplayDrink(firstDrink) {
     drinksReviewList.innerHTML += `<li>${firstDrink.description[i]}</li>`;
   }
   drinkModalLabel.textContent = cocktailName.textContent;
-//   console.log(firstDrink.cost)
-let cost = document.getElementById("cost-amount");
-cost.textContent = firstDrink.cost
-let idBatch = document.getElementById("id-category");
-idBatch.textContent = firstDrink.idDrink;
-// reseting the modal
-
-// document.querySelector(".modal").addEventListener("hidden.bs.modal",()=>{
-//     document.querySelector(".modal-body").innerHTML = ""
-// })
+  let cost = document.getElementById("cost-amount");
+  cost.textContent = firstDrink.cost;
+  let idBatch = document.getElementById("id-category");
+  idBatch.textContent = firstDrink.idDrink;
+  document.getElementById("purchase-drink").addEventListener("click",()=>{
+    purchaseMeal()
+  })
 }
 
 function firstDisplayFood(firstFood) {
-    // document.querySelector(".modal-body").innerHTML = "" 
   foodName.textContent = firstFood.strCategory;
   foodImage.src = firstFood.strCategoryThumb;
-//   console.log(foodModalLabel.textContent)
-  foodModalLabel.textContent = foodName.textContent
-//   console.log(foodModalLabel.textContent)
+  let isDisplayed = true;
+  orderFoodBtn.addEventListener("click", () => {
+    if (isDisplayed) {
+      foodBtnModal.style.visibility = "visible";
+      isDisplayed = false;
+    } else {
+      foodBtnModal.style.visibility = "hidden";
+      isDisplayed = true;
+    }
+  });
+  let closeBtn = document.getElementById("closeBtn");
+  closeBtn.addEventListener("click", () => {
+    foodBtnModal.style.visibility = "hidden";
+    isDisplayed = true;
+  });
+  purchaseBtn.addEventListener("click", () => {
+    foodBtnModal.style.visibility = "hidden";
+    isDisplayed = true;
+    purchaseMeal()
+  });
 
+  document.getElementById("food-cost-amount").textContent = firstFood.cost
+  document.getElementById("food-modal-name").textContent = firstFood.strCategory
 }
 
+function purchaseMeal(){
+    alert("Please wait as your request is being served. Thankyou")
+}
 // displaying a drink on click
 
 function showDrinkOnPage(e) {
@@ -172,45 +191,42 @@ function patchEdit(des) {
 
 function showMealOnPage(e) {
   let mealClicked = e.target.textContent;
-  console.log(mealClicked);
   fetch("http://localhost:3000/food")
     .then((resp) => resp.json())
     .then((data) => {
       displayMeal(data, mealClicked);
     });
 
-  function displayMeal(dataARr, mealName) {
-    let newMeal = dataARr.find((meal) => {
-      return mealName === meal.strCategory;
+  function displayMeal(dataArr, mealName) {
+    let newMeal = dataArr.find((meal) => {
+      return meal.strCategory == mealName;
     });
 
     fetch(`http://localhost:3000/food/${newMeal.id}`)
-    .then(resp => resp.json())
-    .then( data=>{
-        firstDisplayFood(data)
-    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        firstDisplayFood(data);
+      });
   }
 }
 function foodSubmit(e) {
   e.preventDefault();
 }
 
-
 // slideshow animations
 let slideIndex = 0;
-slideShow()
+slideShow();
 
-function slideShow(){
-    let myPics = document.getElementsByClassName("slides")
-    // console.log(myPics) // returns an html collection
-for (let i = 0; i < myPics.length; i++) {
+function slideShow() {
+  let myPics = document.getElementsByClassName("slides");
+  // console.log(myPics) // returns an html collection
+  for (let i = 0; i < myPics.length; i++) {
     myPics[i].style.display = "none";
-}
-slideIndex++;
-if (slideIndex > myPics.length) {
+  }
+  slideIndex++;
+  if (slideIndex > myPics.length) {
     slideIndex = 1;
+  }
+  myPics[slideIndex - 1].style.display = "block";
+  setTimeout(slideShow, 4000);
 }
-myPics[slideIndex - 1].style.display = "block";
-setTimeout(slideShow,4000)
-}
-
