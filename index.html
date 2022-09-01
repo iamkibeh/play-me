@@ -69,8 +69,13 @@
             </button></a>
           </div>
         </div>
-        <div class="food-card">
-          <img src="./assets/images/pexels-roman-odintsov-4871105.jpg" alt="" />
+        <div class="about-food-card">
+          <img class="slides" src="./assets/images/pexels-roman-odintsov-4871105.jpg" alt="" />
+          <img class="slides" src="./assets/images/pexels-pixabay-301692.jpg">
+          <img class="slides" src="./assets/images/pexels-rachel-claire-4819714.jpg">
+          <img class="slides" src="./assets/images/pexels-pixabay-434295.jpg">
+          <img class="slides" src="./assets/images/pexels-rachel-claire-4846246.jpg">
+
         </div>
       </div>
 
@@ -105,9 +110,32 @@
         </form>
         </div>
         <div class="order-drink-btn">
-            <button type="button" class="btn btn-outline-primary btn-lg">
-               Order me
+            <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Order me
               </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="drinkModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Cost:<span id="cost-amount" style="font-weight: bold;"></span></p>
+                        <p>IdCategory: <span id="id-category" style="font-weight: bold;"></span></p>
+                        <p>Discount:<span id="discount" style="font-style: italic;">No offer currently valid</span> </p>
+                        <label for="table-number">Table Number</label>
+                        <input type="number" name="table-number" id="table-number">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Confirm purchase</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
 
@@ -143,13 +171,17 @@
         </form>
         </div>
         <div class="order-food-btn">
-            <button type="button" class="btn btn-outline-primary btn-lg">
+            <!-- <button type="button" class="btn btn-outline-primary btn-lg">
                Order me
-              </button>
+              </button> -->
+              <!-- Button trigger modal -->
+
         </div>
+        
       </div>
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
   </body>
 </html>

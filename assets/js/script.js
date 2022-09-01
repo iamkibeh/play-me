@@ -10,8 +10,9 @@ const foodImage = document.getElementById("food-image");
 const drinksReviewList = document.getElementById("review-list");
 const drinksForm = document.getElementById("drinks-review-form");
 const foodForm = document.getElementById("food-review-form");
-const drinkDescription = document.getElementById("drink-review")
-
+const drinkDescription = document.getElementById("drink-review");
+const drinkModalLabel = document.getElementById("drinkModalLabel")
+const foodModalLabel = document.getElementById("foodModalLabel")
 
 
 function onLoad() {
@@ -49,10 +50,12 @@ function displayDrinks(drinksArr) {
 <a href="#drinks-sec" class="list-group-item list-group-item-action list-group-item-dark">${drinkNames}</a>
 `;
   });
-specificDrink = Array.from(document.getElementsByClassName("list-group-item"));
-specificDrink.forEach(drink =>{
-    drink.addEventListener("click",showDrinkOnPage)
-})
+  specificDrink = Array.from(
+    document.getElementsByClassName("list-group-item")
+  );
+  specificDrink.forEach((drink) => {
+    drink.addEventListener("click", showDrinkOnPage);
+  });
 }
 // display food function
 function displayFood(foodArr) {
@@ -63,6 +66,10 @@ function displayFood(foodArr) {
 <a href="#meals" class="list-group-item list-group-item-action list-group-item-dark">${foodNames}</a>
 `;
   });
+  specificMeal = Array.from(document.getElementsByClassName("list-group-item"));
+  specificMeal.forEach((meal) => {
+    meal.addEventListener("click", showMealOnPage);
+  });
 }
 
 function firstDisplayDrink(firstDrink) {
@@ -72,82 +79,138 @@ function firstDisplayDrink(firstDrink) {
   for (let i = 0; i < firstDrink.description.length; i++) {
     drinksReviewList.innerHTML += `<li>${firstDrink.description[i]}</li>`;
   }
+  drinkModalLabel.textContent = cocktailName.textContent;
+//   console.log(firstDrink.cost)
+let cost = document.getElementById("cost-amount");
+cost.textContent = firstDrink.cost
+let idBatch = document.getElementById("id-category");
+idBatch.textContent = firstDrink.idDrink;
+// reseting the modal
+
+// document.querySelector(".modal").addEventListener("hidden.bs.modal",()=>{
+//     document.querySelector(".modal-body").innerHTML = ""
+// })
 }
 
 function firstDisplayFood(firstFood) {
+    // document.querySelector(".modal-body").innerHTML = "" 
   foodName.textContent = firstFood.strCategory;
   foodImage.src = firstFood.strCategoryThumb;
+//   console.log(foodModalLabel.textContent)
+  foodModalLabel.textContent = foodName.textContent
+//   console.log(foodModalLabel.textContent)
+
 }
 
 // displaying a drink on click
 
-function showDrinkOnPage(e){
-let cocktailClicked = e.target.textContent;
-fetch("http://localhost:3000/drinks")
+function showDrinkOnPage(e) {
+  let cocktailClicked = e.target.textContent;
+  fetch("http://localhost:3000/drinks")
     .then((resp) => resp.json())
     .then((data) => {
-     displayCocktail(data, cocktailClicked);
+      displayCocktail(data, cocktailClicked);
     });
-   
 }
 
-function displayCocktail(drinkArr,name){
-let newDrink = drinkArr.find((obj)=>{
-return obj.strDrink === name;
-})
-updatedDrink(newDrink.id)
+function displayCocktail(drinkArr, name) {
+  let newDrink = drinkArr.find((obj) => {
+    return obj.strDrink === name;
+  });
+  updatedDrink(newDrink.id);
 }
 
 function updatedDrink(id) {
-    fetch(`http://localhost:3000/drinks/${id}`)
+  fetch(`http://localhost:3000/drinks/${id}`)
     .then((resp) => resp.json())
     .then((data) => {
       firstDisplayDrink(data);
     });
 }
 
-drinksForm.addEventListener("submit",drinkSubmit)
-foodForm.addEventListener("submit", foodSubmit)
+drinksForm.addEventListener("submit", drinkSubmit);
+foodForm.addEventListener("submit", foodSubmit);
 
-
-function drinkSubmit(e){
-    e.preventDefault();
-    let yourReview = drinkDescription.value;
-    if(yourReview !== ""){
-        patchEdit(yourReview);
-    }
-drinksForm.reset()
+function drinkSubmit(e) {
+  e.preventDefault();
+  let yourReview = drinkDescription.value;
+  if (yourReview !== "") {
+    patchEdit(yourReview);
+  }
+  drinksForm.reset();
 }
 
-function patchEdit(des){
-   drinksReviewList.innerHTML += `<li>${des}</li>`
-//    console.log(cocktailName.textContent)
-fetch("http://localhost:3000/drinks")
+function patchEdit(des) {
+  drinksReviewList.innerHTML += `<li>${des}</li>`;
+  //    console.log(cocktailName.textContent)
+  fetch("http://localhost:3000/drinks")
     .then((resp) => resp.json())
     .then((data) => {
-     let selectedCocktail = data.find((cocktail)=>{
-return cocktail.strDrink === cocktailName.textContent
-     })
-     
-     fetch(`http://localhost:3000/drinks/${selectedCocktail.id}`,{
+      let selectedCocktail = data.find((cocktail) => {
+        return cocktail.strDrink === cocktailName.textContent;
+      });
+
+      fetch(`http://localhost:3000/drinks/${selectedCocktail.id}`, {
         method: "PATCH",
         headers: {
-            "Content-type" : "application/json",
-            Accept : "application/json"
+          "Content-type": "application/json",
+          Accept: "application/json",
         },
-        body : JSON.stringify({
-            "description" : `[...${selectedCocktail.description},${des}]`
+        body: JSON.stringify({
+          description: [...selectedCocktail.description, des],
         }),
-     })
-     .then(resp => resp.json())
-     .then(data =>{
-        console.log(data)
-     })
-     .catch((error)=>{
-        console.log(error.message)
-     })
+      })
+        .then((resp) => resp.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => {
+          console.log(error.message);
+        });
     });
 }
-function foodSubmit(e){
-    e.preventDefault()
+
+function showMealOnPage(e) {
+  let mealClicked = e.target.textContent;
+  console.log(mealClicked);
+  fetch("http://localhost:3000/food")
+    .then((resp) => resp.json())
+    .then((data) => {
+      displayMeal(data, mealClicked);
+    });
+
+  function displayMeal(dataARr, mealName) {
+    let newMeal = dataARr.find((meal) => {
+      return mealName === meal.strCategory;
+    });
+
+    fetch(`http://localhost:3000/food/${newMeal.id}`)
+    .then(resp => resp.json())
+    .then( data=>{
+        firstDisplayFood(data)
+    })
+  }
 }
+function foodSubmit(e) {
+  e.preventDefault();
+}
+
+
+// slideshow animations
+let slideIndex = 0;
+slideShow()
+
+function slideShow(){
+    let myPics = document.getElementsByClassName("slides")
+    // console.log(myPics) // returns an html collection
+for (let i = 0; i < myPics.length; i++) {
+    myPics[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > myPics.length) {
+    slideIndex = 1;
+}
+myPics[slideIndex - 1].style.display = "block";
+setTimeout(slideShow,4000)
+}
+

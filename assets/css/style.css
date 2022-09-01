@@ -14,13 +14,13 @@
   width: 40%;
   padding: 1.5rem;
 }
-.heading-about .food-card {
+.heading-about .about-food-card {
   width: 60%;
   margin-left: 10%;
 }
-.food-card img {
-  width: 100%;
-  height: 70vh;
+.slides{
+  width: 90%;
+  height: 60vh;
 }
 
 .place-order {
