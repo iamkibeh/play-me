@@ -10,11 +10,13 @@ const foodImage = document.getElementById("food-image");
 const drinksReviewList = document.getElementById("review-list");
 const drinksForm = document.getElementById("drinks-review-form");
 const foodForm = document.getElementById("food-review-form");
+const foodReviewList = document.getElementById("food-review-list")
 const drinkDescription = document.getElementById("drink-review");
 const drinkModalLabel = document.getElementById("drinkModalLabel");
 const orderFoodBtn = document.getElementById("order-food");
 const foodBtnModal = document.querySelector(".foodBtnModal");
 const purchaseBtn = document.getElementById("purchase-btn");
+const customerFoodReview = document.getElementById("food-review")
 
 function onLoad() {
   fetch("http://localhost:3000/drinks")
@@ -78,21 +80,27 @@ function firstDisplayDrink(firstDrink) {
   cocktailImage.src = firstDrink.strDrinkThumb;
   drinksReviewList.innerHTML = "";
   for (let i = 0; i < firstDrink.description.length; i++) {
-    drinksReviewList.innerHTML += `<li>${firstDrink.description[i]}</li>`;
+    drinksReviewList.innerHTML += `<li>${firstDrink.description[i]} <button class = "delete-btn">Delete</button></li>`;
   }
+  deleteMyParent();
   drinkModalLabel.textContent = cocktailName.textContent;
   let cost = document.getElementById("cost-amount");
   cost.textContent = firstDrink.cost;
   let idBatch = document.getElementById("id-category");
   idBatch.textContent = firstDrink.idDrink;
   document.getElementById("purchase-drink").addEventListener("click",()=>{
-    purchaseMeal()
+    purchaseMeal()   
   })
 }
 
 function firstDisplayFood(firstFood) {
   foodName.textContent = firstFood.strCategory;
   foodImage.src = firstFood.strCategoryThumb;
+  foodReviewList.innerHTML = "";
+    for(let i =0; i<firstFood.strCategoryDescription.length ;i++){
+        foodReviewList.innerHTML += `<li>${firstFood.strCategoryDescription[i]} <button class = "delete-btn">Delete</button></li>`
+    }
+    deleteMyParent()
   let isDisplayed = true;
   orderFoodBtn.addEventListener("click", () => {
     if (isDisplayed) {
@@ -159,8 +167,10 @@ function drinkSubmit(e) {
   drinksForm.reset();
 }
 
+
 function patchEdit(des) {
-  drinksReviewList.innerHTML += `<li>${des}</li>`;
+  drinksReviewList.innerHTML += `<li>${des} <button class = "delete-btn">Delete</button></li>`;
+ deleteMyParent()
   //    console.log(cocktailName.textContent)
   fetch("http://localhost:3000/drinks")
     .then((resp) => resp.json())
@@ -211,8 +221,15 @@ function showMealOnPage(e) {
 }
 function foodSubmit(e) {
   e.preventDefault();
+  let yourFoodReview = customerFoodReview.value
+  postFoodReview(yourFoodReview)
+  foodForm.reset();
 }
 
+function postFoodReview(myReview){
+foodReviewList.innerHTML += `<li>${myReview} <button class = "delete-btn">Delete</button></li>`
+deleteMyParent()
+}
 // slideshow animations
 let slideIndex = 0;
 slideShow();
@@ -229,4 +246,13 @@ function slideShow() {
   }
   myPics[slideIndex - 1].style.display = "block";
   setTimeout(slideShow, 4000);
+}
+
+function deleteMyParent(){
+    let newBtn = document.getElementsByClassName("delete-btn")
+    for(let item of newBtn) {
+      item.addEventListener("click",()=>{
+        item.parentNode.remove()
+      })
+    }
 }
