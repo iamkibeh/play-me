@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", onLoad);
 const drinksCont = document.getElementById("drinks-list");
 const foodCont = document.getElementById("food-list");
 
-let drinkNames, foodNames, specificDrink;
+let drinkNames, foodNames, specificDrink, tableNo , drinkTableNo;
 const cocktailName = document.getElementById("cocktail-name");
 const cocktailImage = document.getElementById("cocktail-image");
 const foodName = document.getElementById("food-name");
@@ -17,6 +17,8 @@ const orderFoodBtn = document.getElementById("order-food");
 const foodBtnModal = document.querySelector(".foodBtnModal");
 const purchaseBtn = document.getElementById("purchase-btn");
 const customerFoodReview = document.getElementById("food-review")
+const foodTableNo = document.getElementById("food-table-number");
+
 
 function onLoad() {
   fetch("http://localhost:3000/drinks")
@@ -88,7 +90,20 @@ function firstDisplayDrink(firstDrink) {
   cost.textContent = firstDrink.cost;
   let idBatch = document.getElementById("id-category");
   idBatch.textContent = firstDrink.idDrink;
-  document.getElementById("purchase-drink").addEventListener("click", purchaseMeal)
+  document.getElementById("table-number").addEventListener("change",(e)=>{
+    drinkTableNo = e.target.value;
+  });
+  document.getElementById("purchase-drink").addEventListener("click",()=> {
+    if(drinkTableNo){
+      alert(`Please wait as your request is being served on table number ${drinkTableNo}. Thankyou`)
+    }
+    else{
+    alert(`Unfortunately we can't validate your request because you have not specified the table number!`)
+    }
+    document.getElementById("table-number").value=""
+
+  })
+
 }
 
 function firstDisplayFood(firstFood) {
@@ -124,8 +139,19 @@ function firstDisplayFood(firstFood) {
   document.getElementById("food-modal-name").textContent = firstFood.strCategory
 }
 
+foodTableNo.addEventListener("change",(e)=>{
+  tableNo = e.target.value;
+  foodTableNo.value = ""
+ })
 function purchaseMeal(){
-    alert("Please wait as your request is being served. Thankyou")
+  if(tableNo){
+    alert(`Please wait as your request is being served on table number ${tableNo}. Thankyou`)
+  foodTableNo.value = ""
+  }
+  else{
+  alert(`Unfortunately we can't validate your request because you have not specified the table number!`)
+  }
+ 
 }
 // displaying a drink on click
 
