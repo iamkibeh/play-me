@@ -195,7 +195,6 @@ function drinkSubmit(e) {
 function patchEdit(des) {
   drinksReviewList.innerHTML += `<li>${des} <button class = "delete-btn">Delete</button></li>`;
  deleteMyParent()
-  //    console.log(cocktailName.textContent)
   fetch("http://localhost:3000/drinks")
     .then((resp) => resp.json())
     .then((data) => {
@@ -260,7 +259,6 @@ slideShow();
 
 function slideShow() {
   let myPics = document.getElementsByClassName("slides");
-  // console.log(myPics) // returns an html collection
   for (let i = 0; i < myPics.length; i++) {
     myPics[i].style.display = "none";
   }
