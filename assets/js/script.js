@@ -88,9 +88,7 @@ function firstDisplayDrink(firstDrink) {
   cost.textContent = firstDrink.cost;
   let idBatch = document.getElementById("id-category");
   idBatch.textContent = firstDrink.idDrink;
-  document.getElementById("purchase-drink").addEventListener("click",()=>{
-    purchaseMeal()   
-  })
+  document.getElementById("purchase-drink").addEventListener("click", purchaseMeal)
 }
 
 function firstDisplayFood(firstFood) {
