@@ -1,6 +1,6 @@
 # play-me
 
-This is a website that makes it easier for customers to order anything they would like to be served and is available in the restaurant. A user is displaayed with a list of all drinks and meals available. ALl they do is order the food and confirm the purchase and the barattendes would gladly have them served on time.
+This is a website that makes it easier for customers to order anything they would like to be served and is available in the restaurant. A user is displaayed with a list of all drinks and meals available. All they do is order the food and confirm the purchase and the barattendes would gladly have them served on time.
 
 ##### By **Kibet Immanuel Ng'eno**
 
