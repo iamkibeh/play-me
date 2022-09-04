@@ -1,6 +1,6 @@
 # Foodie and Yummy
 
-This is a website that makes it easier for customers to order anything they would like to be served and is available in the restaurant. A user is displayed with a list of all drinks and meals available. All they do is order the food and confirm the purchase and the bar attendees would gladly have them served on time.Once they have ordered, they are notified that they will be served on a specific table.
+This is a website that makes it easier for customers to order anything they would like to be served and is available in the restaurant. A user is displayed with a list of all drinks and meals available. All they do is order the food and confirm the purchase and the bar attendees would gladly have them served on time.Once they have ordered, they are notified that they will be served on a specific table. It uses a local API that I created using JSON-Server to fetch data and manipulate the user interface.
 
 ##### By **Kibet Immanuel Ng'eno**
 
@@ -22,6 +22,7 @@ Foodie and yummy is an application that allows customers to view the menu and pl
 * Netlify deployed site [click here]( https://iamkibeh-play-me-site.netlify.app/)
 * github-pages deployed site [click here]( https://iamkibeh.github.io/play-me/#)
 * Live demo link [click here](https://drive.google.com/file/d/1R-aiTLUKQbmo_On8Sn1HNVxI95sGqTB5/view)
+* API link [click here](http://localhost:3000)
 
 ## Setup/Installation Requirement
 
