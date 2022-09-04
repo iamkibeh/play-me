@@ -146,7 +146,6 @@ foodTableNo.addEventListener("change",(e)=>{
 function purchaseMeal(){
   if(tableNo){
     alert(`Please wait as your request is being served on table number ${tableNo}. Thankyou`)
-  foodTableNo.value = ""
   }
   else{
   alert(`Unfortunately we can't validate your request because you have not specified the table number!`)

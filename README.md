@@ -21,6 +21,7 @@ Foodie and yummy is an application that allows customers to view the menu and pl
 
 * Netlify deployed site [click here]( https://iamkibeh-play-me-site.netlify.app/)
 * github-pages deployed site [click here]( https://iamkibeh.github.io/play-me/#)
+* Live demo link [click here](https://drive.google.com/file/d/1R-aiTLUKQbmo_On8Sn1HNVxI95sGqTB5/view)
 
 ## Setup/Installation Requirement
 
