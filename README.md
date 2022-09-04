@@ -1,6 +1,6 @@
-# play-me
+# Foodie and Yummy
 
-This is a website that makes it easier for customers to order anything they would like to be served and is available in the restaurant. A user is displaayed with a list of all drinks and meals available. All they do is order the food and confirm the purchase and the barattendes would gladly have them served on time.
+This is a website that makes it easier for customers to order anything they would like to be served and is available in the restaurant. A user is displayed with a list of all drinks and meals available. All they do is order the food and confirm the purchase and the bar attendees would gladly have them served on time.Once they have ordered, they are notified that they will be served on a specific table.
 
 ##### By **Kibet Immanuel Ng'eno**
 
@@ -15,11 +15,13 @@ This is a website that makes it easier for customers to order anything they woul
 
 ## Description
 
-Play me is an application that allows customers to view the menu and place an order, and has a graphical user interface that enables the restaurant attendees to access what the customers have ordered based on their tables and administer to them. Customers can view any food that is offered, andy drinks, and also get to see reviews of their fellow customers concerning a specific food type they took. In conjunction to this, ordering food is made easier.
+Foodie and yummy is an application that allows customers to view the menu and place an order, and has a graphical user interface that enables the restaurant attendees to access what the customers have ordered based on their tables and administer to them. Customers can view any food that is offered, and drinks, and also get to see reviews of their fellow customers concerning a specific food type they took. In conjunction to this, ordering food is made easier.
 
 ## Link to the website
 
-[click here]( https://iamkibeh.github.io/play-me/#)
+* Netlify deployed site [click here]( https://iamkibeh-play-me-site.netlify.app/)
+* github-pages deployed site [click here]( https://iamkibeh.github.io/play-me/#)
+
 ## Setup/Installation Requirement
 
 1. On Github.com page navigate to the spoon-knife icon on the repository on the top right.This will fork the repo to your username.
@@ -52,13 +54,15 @@ This website works well and is responsive to any device. The only challenge is t
 
 [Go Back to top](#table-of-content)
 ## Contributing
-Feel free to create a pull request. It is highly welcomed and if you wish to share any information or concerns of what should be implimented in the project the floor is yours to open an issue on changes you would wish to be made.
+Feel free to create a pull request. It is highly welcomed and if you wish to share any information or concerns of what should be implemented in the project the floor is yours to open an issue on changes you would wish to be made.
 If you are new to the contribution world click on this [link](https://github.com/freeCodeCamp/how-to-contribute-to-open-source/blob/main/CONTRIBUTING.md) and follow the guide documented. Congratulations to joining contribution world. 
 
 [Go Back to top](#table-of-content)
+## Future implementations
+I am looking forward to adding a search music API that allows the customers to interact with the dj and request a music of their choice. The dj would then get the request and play music based on the ones with highest number of suggestions. Further more, I plan to make this application become a fullstack web application and later come up with a mobile application from it.
 ## Support and contact details
 
-Incase you encounter any bug or issue, feel free to reach us out at our support team [support]( https://iamkibeh.github.io/Real-Estates-website/).
+Incase you encounter any bug or issue, feel free to reach us out at our support team [support]( https://iamkibeh.github.io/play-me/#).
 You can also contact us [+254716246708](tell:+254716246708). Alternatively, you can make a contribution to the project as mentioned earlier.
 ### Questions?
 Twitter: [@IamKibeh](https://twitter.com/IamKibeh)
@@ -75,4 +79,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [Go to top](#table-of-content)
 
-Copyright (c) {2022} **{Play-me}**
+Copyright (c) {2022} **{Foodie and yummy}**
