@@ -38,7 +38,35 @@ $git clone 'url'
 > Unpacking objects: 100% ,done
 ```
 4. you now have the repository in your local machine.
-> note that you do not need any dependencies to run this application. It works best on a code editor of your choice. Provided you create a json server to watch the json file containing the data.
+5. using your code editor, preferably vs code, open your terminal and run the following command
+```
+json-server --watch db.json
+``` 
+6. press enter to run the command and host json server locally in your machine.
+7. something similar to this would be displayed in your terminal
+```
+$ json-server --watch db.json
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Done
+
+  Resources
+  http://localhost:3000/drinks
+  http://localhost:3000/music
+  http://localhost:3000/food
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+```
+8. You can now go live if you have live server extension installed or you can simply run index.html in your browser by right clicking on the html file and selecting open with live server.
+9. The application is now up and running.
+> note that you do not need any dependencies to run this application. Provided you create a json server to watch the json file containing the data and the application is up and running.
 
 [Go Back to top](#table-of-content)
 #### Requirements
